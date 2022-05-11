@@ -1,5 +1,50 @@
-.container-fluid {
-  background-color: #f2803f;
+.home-page {
+  background: #000 url("../../../assets/images/homePageImage3.jpg");
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  margin: 0rem 10rem 10rem 10rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 12vh;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.btn-light {
+  background-color: #fa4616;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
