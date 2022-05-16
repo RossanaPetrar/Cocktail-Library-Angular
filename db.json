@@ -2,17 +2,6 @@
   "cocktails": [
     {
       "id": 1,
-      "name": "Gingerbread House",
-      "ingredients": [
-        "60 ml spiced rum",
-        "10 ml triple sec",
-        "5 ml Masala Chai syrup",
-        "10 ml lemon juice"
-      ],
-      "description": "Mix all the ingredients in a shaker with a couple of ice cubes. Shake 15 seconds. Strain and pour over ice. Fill the rest of the glass with coke."
-    },
-    {
-      "id": 2,
       "name": "Mezcal Fun",
       "ingredients": [
         "60 ml Mezcal",
@@ -23,7 +12,36 @@
         "worm salt",
         "blood orange slices"
       ],
-      "description": "Cut a lime wedge to wet the rim of your cocktail glass. Then, dip the rim into a bowl of worm salt. In a shaker, pour in mezcal and lime juice. Shake for 10 seconds. Pour into a salt-rimmed and ice-filled cocktail glass.Top off with blood orange soda and sparkling water. Garnish with a slice of blood orange and a couple sprigs of thyme."
+      "description": "Cut a lime wedge to wet the rim of your cocktail glass. Then, dip the rim into a bowl of worm salt. In a shaker, pour in mezcal and lime juice. Shake for 10 seconds. Pour into a salt-rimmed and ice-filled cocktail glass.Top off with blood orange soda and sparkling water. Garnish with a slice of blood orange and a couple sprigs of thyme.",
+      "image": "https://cdn.adh.reperio.news/image-6/6316322f-3e92-4d38-8059-3e879299019a/index.jpeg?p=a%3D1%26co%3D1.05%26w%3D500%26h%3D750%26q%3D91%26r%3Dcontain%26f%3Dwebp",
+      "author": "Lisa"
+    },
+    {
+      "id": 2,
+      "name": "Gingerbread House",
+      "ingredients": [
+        "60 ml spiced rum",
+        "10 ml triple sec",
+        "5 ml Masala Chai syrup",
+        "10 ml lemon juice"
+      ],
+      "description": "Mix all the ingredients in a shaker with a couple of ice cubes. Shake 15 seconds. Strain and pour over ice. Fill the rest of the glass with coke.",
+      "image": "https://cdn.adh.reperio.news/image-6/6316322f-3e92-4d38-8059-3e879299019a/index.jpeg?p=a%3D1%26co%3D1.05%26w%3D500%26h%3D750%26q%3D91%26r%3Dcontain%26f%3Dwebp",
+      "author": "Ioan"
+    },
+    {
+      "id": 3,
+      "name": "Blueberry Lime Gin & Tonic",
+      "ingredients": [
+        "1/2 cup blueberries",
+        "2 lime wedges",
+        "2 mint leaves",
+        "50 ml gin",
+        "125 ml tonic water"
+      ],
+      "description": "Smash the blueberries in a tall glass. Add ice, gin, top with tonic water, squeeze lime juice and stir. Garnish with a lime wedge and mint leaves.",
+      "image": "https://cdn.adh.reperio.news/image-6/6316322f-3e92-4d38-8059-3e879299019a/index.jpeg?p=a%3D1%26co%3D1.05%26w%3D500%26h%3D750%26q%3D91%26r%3Dcontain%26f%3Dwebp",
+      "author": "Vlad"
     }
   ]
 }
