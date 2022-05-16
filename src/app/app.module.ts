@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CocktailsComponent } from './components/your-cocktails/cocktails/cocktails.component';
 import { AddCocktailComponent } from './components/add-cocktail/add-cocktail.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CocktailCardComponent } from './components/your-cocktails/cocktail-card/cocktail-card.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +19,11 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HomeComponent,
     CocktailsComponent,
     AddCocktailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CocktailCardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    FontAwesomeModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

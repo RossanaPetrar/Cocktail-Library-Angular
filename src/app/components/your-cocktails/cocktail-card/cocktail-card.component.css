@@ -1,0 +1,27 @@
+.cocktail-ingredient {
+  padding: 0.3rem 0.5rem 0.3rem 1rem;
+  border-left: 1px solid;
+}
+
+.card-title {
+  padding: 0.6rem 0.5rem 0.25rem 0;
+  font-size: 1.5rem;
+}
+
+.container-fluid {
+  max-height: 8rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.btn-delete {
+  background-color: #fa4616;
+  color: white;
+  border: none;
+  margin-left: 1rem;
+}
+
+.btn-edit {
+  background-color: white;
+  color: #fa4616;
+  border: 1px solid #fa4616;
+}

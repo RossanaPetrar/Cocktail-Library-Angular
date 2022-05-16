@@ -6,7 +6,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CocktailsComponent } from './components/your-cocktails/cocktails/cocktails.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'your-cocktails', component: CocktailsComponent },
   { path: 'add-cocktail', component: AddCocktailComponent },
   { path: '**', component: PageNotFoundComponent },

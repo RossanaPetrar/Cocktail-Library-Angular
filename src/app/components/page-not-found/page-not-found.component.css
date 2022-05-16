@@ -14,3 +14,8 @@ h1 {
   background-color: #fa4616;
   color: white;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}

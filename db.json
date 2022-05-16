@@ -1,0 +1,29 @@
+{
+  "cocktails": [
+    {
+      "id": 1,
+      "name": "Gingerbread House",
+      "ingredients": [
+        "60 ml spiced rum",
+        "10 ml triple sec",
+        "5 ml Masala Chai syrup",
+        "10 ml lemon juice"
+      ],
+      "description": "Mix all the ingredients in a shaker with a couple of ice cubes. Shake 15 seconds. Strain and pour over ice. Fill the rest of the glass with coke."
+    },
+    {
+      "id": 2,
+      "name": "Mezcal Fun",
+      "ingredients": [
+        "60 ml Mezcal",
+        "90 ml blood orange soda",
+        "60 ml sparkling water",
+        "30 ml lemon juice",
+        "a couple of thyme sprigs",
+        "worm salt",
+        "blood orange slices"
+      ],
+      "description": "Cut a lime wedge to wet the rim of your cocktail glass. Then, dip the rim into a bowl of worm salt. In a shaker, pour in mezcal and lime juice. Shake for 10 seconds. Pour into a salt-rimmed and ice-filled cocktail glass.Top off with blood orange soda and sparkling water. Garnish with a slice of blood orange and a couple sprigs of thyme."
+    }
+  ]
+}

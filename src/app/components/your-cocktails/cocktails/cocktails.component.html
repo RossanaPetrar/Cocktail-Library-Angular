@@ -1,3 +1,37 @@
-<div class="container-fluid text-center">
-  <h1>View Your Cocktails</h1>
+<section class="cocktails-header text-center">
+  <h2 class="header-title">FIND YOUR PERFECT COCKTAIL</h2>
+  <p class="header-text">
+    Sweet, sour, bubbly or creamy - search for the perfect cocktail to match
+    your mood
+  </p>
+</section>
+
+<div class="container text-center mt-5 mb-5">
+  <input type="search" class="search-bar" />
+  <button type="button" class="btn btn-light search-button">
+    <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+  </button>
 </div>
+
+<!-- <section
+  class="container d-flex justify-content-start align-items-start flex-wrap"
+>
+  <h4>Filter:</h4>
+  <h5>Level</h5>
+  <span class="badge bg-light">Beginner</span>
+  <span class="badge bg-light">Intermediate</span>
+  <span class="badge bg-light">Advanced</span>
+  <h5>Alcohol content</h5>
+  <span class="badge bg-light">Alcoholic</span>
+  <span class="badge bg-light">Nonalcoholic</span>
+  <h5>Alcohol type</h5>
+  <span class="badge bg-light">Rum</span>
+  <span class="badge bg-light">Gin</span>
+  <span class="badge bg-light">Vodka</span>
+</section>
+
+radio buttons ca sa fie HTML semantic
+rxjs operator scan pentru filtrare
+SAU angular grid pentru filtrare, practic toate componentele o sa fie tabel si filtrezi in tabel-->
+
+<app-cocktail-card></app-cocktail-card>
