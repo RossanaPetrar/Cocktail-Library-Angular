@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { Cocktail } from '../../../Cocktail';
+import { CocktailServerService } from '../../../services/cocktail-server.service';
 
 @Component({
   selector: 'app-cocktails',
@@ -8,7 +10,21 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 })
 export class CocktailsComponent implements OnInit {
   faMagnifyingGlass = faMagnifyingGlass;
-  constructor() {}
+  cocktails: Cocktail[] = [];
+  constructor(private cocktailServerService: CocktailServerService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cocktailServerService
+      .getCocktails()
+      .subscribe((cocktails) => (this.cocktails = cocktails));
+  }
+
+  deleteCocktail(cocktail: Cocktail) {
+    this.cocktailServerService
+      .deleteCocktail(cocktail)
+      .subscribe(
+        () =>
+          (this.cocktails = this.cocktails.filter((c) => c.id !== cocktail.id))
+      );
+  }
 }

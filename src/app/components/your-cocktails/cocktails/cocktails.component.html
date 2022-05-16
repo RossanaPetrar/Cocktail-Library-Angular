@@ -36,4 +36,8 @@ radio buttons ca sa fie HTML semantic
 rxjs operator scan pentru filtrare
 SAU angular grid pentru filtrare, practic toate componentele o sa fie tabel si filtrezi in tabel-->
 
-<app-cocktail-card></app-cocktail-card>
+<app-cocktail-card
+  *ngFor="let cocktail of cocktails"
+  [cocktail]="cocktail"
+  (onDeleteCocktail)="deleteCocktail(cocktail)"
+></app-cocktail-card>
