@@ -1,5 +1,24 @@
-.container-fluid {
-  background-color: #f2c83f;
-  color: white;
+.vh-container {
+  background-color: #fa4616;
   height: 100vh;
+}
+
+.cocktail-ingredient {
+  padding: 0.3rem 0.5rem 0.3rem 1rem;
+  border-left: 1px solid;
+}
+
+.card-title {
+  padding: 0.6rem 0.5rem 0.25rem 0;
+  font-size: 1.5rem;
+}
+
+.btn-save {
+  background-color: #fa4616;
+  color: white;
+  border: none;
+}
+
+.card-title {
+  font-size: 2rem;
 }
