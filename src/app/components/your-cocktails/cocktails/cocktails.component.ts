@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Cocktail } from '../../../Cocktail';
 import { CocktailServerService } from '../../../services/cocktail-server.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CocktailModalComponent } from '../cocktail-modal/cocktail-modal.component';
+import { catchError, NEVER, switchMap, tap } from 'rxjs';
 
 @Component({
   selector: 'app-cocktails',
@@ -11,7 +14,10 @@ import { CocktailServerService } from '../../../services/cocktail-server.service
 export class CocktailsComponent implements OnInit {
   faMagnifyingGlass = faMagnifyingGlass;
   cocktails: Cocktail[] = [];
-  constructor(private cocktailServerService: CocktailServerService) {}
+  constructor(
+    private cocktailServerService: CocktailServerService,
+    private modalService: NgbModal
+  ) {}
 
   ngOnInit(): void {
     this.cocktailServerService
@@ -26,5 +32,32 @@ export class CocktailsComponent implements OnInit {
         () =>
           (this.cocktails = this.cocktails.filter((c) => c.id !== cocktail.id))
       );
+  }
+
+  showEditCocktail(cocktail: Cocktail) {
+    const modalRef = this.modalService.open(CocktailModalComponent);
+    modalRef.componentInstance.clonedCocktail = {
+      ...cocktail,
+    };
+
+    modalRef.closed
+      .pipe(
+        switchMap((updatedCocktail) => {
+          return this.cocktailServerService.updateCocktail(updatedCocktail);
+        }),
+        tap((updatedCocktail) => {
+          this.cocktails = this.cocktails.map((c, i, cocktails) => {
+            if (c.id === updatedCocktail.id) {
+              return updatedCocktail;
+            }
+            return c;
+          });
+        }),
+        catchError((err) => {
+          alert(err);
+          return NEVER;
+        })
+      )
+      .subscribe();
   }
 }

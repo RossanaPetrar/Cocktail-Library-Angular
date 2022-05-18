@@ -40,4 +40,5 @@ SAU angular grid pentru filtrare, practic toate componentele o sa fie tabel si f
   *ngFor="let cocktail of cocktails"
   [cocktail]="cocktail"
   (onDeleteCocktail)="deleteCocktail(cocktail)"
+  (edit)="showEditCocktail($event)"
 ></app-cocktail-card>

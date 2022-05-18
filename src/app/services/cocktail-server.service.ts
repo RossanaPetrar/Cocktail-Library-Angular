@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Cocktail } from '../Cocktail';
 
-const HttpOptions = {
+const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
   }),
@@ -24,5 +24,10 @@ export class CocktailServerService {
   deleteCocktail(cocktail: Cocktail): Observable<Cocktail> {
     const url = `${this.apiUrl}/${cocktail.id}`;
     return this.http.delete<Cocktail>(url);
+  }
+
+  updateCocktail(cocktail: Cocktail): Observable<Cocktail> {
+    const url = `${this.apiUrl}/${cocktail.id}`;
+    return this.http.patch<Cocktail>(url, cocktail, httpOptions);
   }
 }

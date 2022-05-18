@@ -28,7 +28,9 @@
             {{ cocktail.description }}
           </p>
 
-          <button class="btn btn-light btn-edit">Edit</button>
+          <button class="btn btn-light btn-edit" (click)="onEdit()">
+            Edit
+          </button>
           <button class="btn btn-light btn-delete" (click)="onDelete(cocktail)">
             Delete
           </button>

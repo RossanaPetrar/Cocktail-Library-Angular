@@ -1,0 +1,12 @@
+.btn-save {
+  background-color: #fa4616;
+  color: white;
+  border: none;
+  margin-left: 1rem;
+}
+
+.btn-cancel {
+  background-color: white;
+  color: #fa4616;
+  border: 1px solid #fa4616;
+}

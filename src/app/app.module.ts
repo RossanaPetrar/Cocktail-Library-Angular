@@ -13,6 +13,7 @@ import { CocktailsComponent } from './components/your-cocktails/cocktails/cockta
 import { AddCocktailComponent } from './components/add-cocktail/add-cocktail.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CocktailCardComponent } from './components/your-cocktails/cocktail-card/cocktail-card.component';
+import { CocktailModalComponent } from './components/your-cocktails/cocktail-modal/cocktail-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CocktailCardComponent } from './components/your-cocktails/cocktail-card
     AddCocktailComponent,
     PageNotFoundComponent,
     CocktailCardComponent,
+    CocktailModalComponent,
   ],
   imports: [
     BrowserModule,

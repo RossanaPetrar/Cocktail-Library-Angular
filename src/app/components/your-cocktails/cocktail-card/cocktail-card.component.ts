@@ -9,6 +9,7 @@ import { Cocktail } from '../../../Cocktail';
 export class CocktailCardComponent implements OnInit {
   @Input() cocktail!: Cocktail;
   @Output() onDeleteCocktail: EventEmitter<Cocktail> = new EventEmitter();
+  @Output() edit: EventEmitter<Cocktail> = new EventEmitter();
 
   constructor() {}
 
@@ -16,5 +17,9 @@ export class CocktailCardComponent implements OnInit {
 
   onDelete(cocktail: Cocktail) {
     this.onDeleteCocktail.emit(cocktail);
+  }
+
+  onEdit() {
+    this.edit.emit(this.cocktail);
   }
 }
