@@ -23,18 +23,68 @@
                 you go!
               </p>
 
-              <div class="container m-6 p-6">
-                <div class="container mt-4">
+              <!-- Add a Cocktail Form -->
+              <form>
+                <div class="container m-6 p-6">
+                  <div class="container mt-4">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Enter cocktail name"
+                        aria-label="Enter cocktail name"
+                        aria-describedby="basic-addon1"
+                        name="name"
+                        [(ngModel)]="name"
+                      />
+                      <label for="floatingInput">Enter cocktail name</label>
+                    </div>
+                  </div>
+
+                  <div class="container mt-4">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Enter author name"
+                        aria-label="Enter author name"
+                        aria-describedby="basic-addon1"
+                        name="author"
+                        [(ngModel)]="author"
+                      />
+                      <label for="floatingInput">Enter author name</label>
+                    </div>
+                  </div>
+
                   <div class="form-floating mb-3">
                     <input
                       type="text"
                       class="form-control"
                       id="floatingInput"
-                      placeholder="Enter cocktail name"
-                      aria-label="Enter cocktail name"
+                      placeholder="Enter ingredients"
+                      aria-label="Enter ingredients"
                       aria-describedby="basic-addon1"
+                      name="ingredients"
+                      [(ngModel)]="ingredients"
                     />
-                    <label for="floatingInput">Enter cocktail name</label>
+                    <label for="floatingInput"
+                      >Enter ingredients - press enter after each
+                      ingredient</label
+                    >
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 100px"
+                      name="description"
+                      [(ngModel)]="description"
+                    ></textarea>
+                    <label for="floatingTextarea2">Add a description</label>
                   </div>
                 </div>
 
@@ -46,41 +96,18 @@
                     placeholder="Enter ingredients"
                     aria-label="Enter ingredients"
                     aria-describedby="basic-addon1"
+                    name="image"
+                    [(ngModel)]="image"
                   />
-                  <label for="floatingInput"
-                    >Enter ingredients - press enter after each
-                    ingredient</label
-                  >
+                  <label for="floatingInput">Add picture link</label>
                 </div>
 
-                <div class="form-floating mb-3">
-                  <textarea
-                    class="form-control"
-                    placeholder="Leave a comment here"
-                    id="floatingTextarea2"
-                    style="height: 200px"
-                  ></textarea>
-                  <label for="floatingTextarea2">Add a description</label>
-                </div>
-              </div>
-
-              <div class="form-floating mb-3">
                 <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="Enter ingredients"
-                  aria-label="Enter ingredients"
-                  aria-describedby="basic-addon1"
+                  type="submit"
+                  value="Save"
+                  class="btn btn-light btn-save"
                 />
-                <label for="floatingInput">Add picture link</label>
-              </div>
-
-              <input
-                type="submit"
-                value="Save"
-                class="btn btn-light btn-save"
-              />
+              </form>
             </div>
           </div>
         </div>
