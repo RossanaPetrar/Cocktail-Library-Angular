@@ -14,6 +14,7 @@ import { catchError, NEVER, switchMap, tap } from 'rxjs';
 export class CocktailsComponent implements OnInit {
   faMagnifyingGlass = faMagnifyingGlass;
   cocktails: Cocktail[] = [];
+  name!: string;
   constructor(
     private cocktailServerService: CocktailServerService,
     private modalService: NgbModal
@@ -46,7 +47,7 @@ export class CocktailsComponent implements OnInit {
           return this.cocktailServerService.updateCocktail(updatedCocktail);
         }),
         tap((updatedCocktail) => {
-          this.cocktails = this.cocktails.map((c, i, cocktails) => {
+          this.cocktails = this.cocktails.map((c) => {
             if (c.id === updatedCocktail.id) {
               return updatedCocktail;
             }
@@ -59,5 +60,17 @@ export class CocktailsComponent implements OnInit {
         })
       )
       .subscribe();
+  }
+
+  search() {
+    if (this.name == '') {
+      this.ngOnInit();
+    } else {
+      this.cocktails = this.cocktails.filter((res) => {
+        return res.name
+          .toLocaleLowerCase()
+          .match(this.name.toLocaleLowerCase());
+      });
+    }
   }
 }

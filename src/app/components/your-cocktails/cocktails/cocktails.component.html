@@ -7,7 +7,14 @@
 </section>
 
 <div class="container text-center mt-5 mb-5">
-  <input type="search" class="search-bar" />
+  <input
+    type="search"
+    class="search-bar"
+    name="name"
+    placeholder="Enter cocktail name to search"
+    [(ngModel)]="name"
+    (ngModelChange)="search()"
+  />
   <button type="button" class="btn btn-light search-button">
     <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
   </button>
