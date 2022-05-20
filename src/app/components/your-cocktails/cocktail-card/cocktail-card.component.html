@@ -17,13 +17,17 @@
             <small class="text-muted">by {{ cocktail.author }}</small>
           </p>
           <span class=""></span>
+
           <div
             class="container-fluid d-flex flex-column justify-content-start align-items-start flex-wrap"
           >
-            <div class="cocktail-ingredient">
-              {{ cocktail.ingredients }}
+            <div *ngFor="let ingredient of cocktail.ingredients">
+              <div class="cocktail-ingredient">
+                {{ ingredient }}
+              </div>
             </div>
           </div>
+
           <p class="card-text">
             {{ cocktail.description }}
           </p>
