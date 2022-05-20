@@ -58,29 +58,46 @@
                     </div>
                   </div>
 
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="floatingInput"
-                      placeholder="Enter ingredients"
-                      aria-label="Enter ingredients"
-                      aria-describedby="basic-addon1"
-                      name="ingredients"
-                      [(ngModel)]="ingredients"
-                    />
-                    <label for="floatingInput"
-                      >Enter ingredients - press enter after each
-                      ingredient</label
-                    >
+                  <!-- Tags imput html -->
+
+                  <div class="wrapper">
+                    <div class="content">
+                      <p>
+                        Enter ingredients - press enter after each ingredient
+                      </p>
+
+                      <ul class="input-window">
+                        <div class="tag-list" *ngFor="let tag of tags">
+                          <li class="ingredient-tags">
+                            {{ tag
+                            }}<fa-icon
+                              [icon]="faXmark"
+                              (click)="remove(tag)"
+                            ></fa-icon>
+                          </li>
+                        </div>
+                        <input type="text" (keyup)="addTag($event)" />
+                      </ul>
+
+                      <div class="details">
+                        <button
+                          class="btn btn-light btn-remove-ingredients"
+                          (click)="removeAll()"
+                        >
+                          Remove all
+                        </button>
+                      </div>
+                    </div>
                   </div>
+
+                  <!-- Tags imput html -->
 
                   <div class="form-floating mb-3">
                     <textarea
                       class="form-control"
                       placeholder="Leave a comment here"
                       id="floatingTextarea2"
-                      style="height: 100px"
+                      style="height: 80px"
                       name="description"
                       [(ngModel)]="description"
                     ></textarea>
@@ -108,6 +125,38 @@
                   class="btn btn-light btn-save"
                 />
               </form>
+
+              <!-- Tags imput html -->
+
+              <div class="wrapper">
+                <div class="content">
+                  <p>Enter ingredients - press enter after each ingredient</p>
+
+                  <ul class="input-window">
+                    <div class="tag-list" *ngFor="let tag of tags">
+                      <li class="ingredient-tags">
+                        {{ tag
+                        }}<fa-icon
+                          [icon]="faXmark"
+                          (click)="remove(tag)"
+                        ></fa-icon>
+                      </li>
+                    </div>
+                    <input type="text" (keyup)="addTag($event)" />
+                  </ul>
+
+                  <div class="details">
+                    <button
+                      class="btn btn-light btn-remove-ingredients"
+                      (click)="removeAll()"
+                    >
+                      Remove all
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tags imput html -->
             </div>
           </div>
         </div>
