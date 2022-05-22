@@ -26,6 +26,10 @@ export class CocktailServerService {
     return this.http.delete<Cocktail>(url);
   }
 
+  addCocktail(cocktail: Cocktail): Observable<Cocktail> {
+    return this.http.post<Cocktail>(this.apiUrl, cocktail);
+  }
+
   updateCocktail(cocktail: Cocktail): Observable<Cocktail> {
     const url = `${this.apiUrl}/${cocktail.id}`;
     return this.http.patch<Cocktail>(url, cocktail, httpOptions);

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cocktail } from '../../Cocktail';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { CocktailServerService } from 'src/app/services/cocktail-server.service';
 
 @Component({
   selector: 'app-add-cocktail',
@@ -11,37 +12,62 @@ export class AddCocktailComponent implements OnInit {
   faXmark = faXmark;
   name!: string;
   author!: string;
-  ingredients!: string[];
+  ingredients: string[] = [];
   description!: string;
   image!: string;
   tags: string[] = [];
 
-  constructor() {}
+  constructor(private cocktailServer: CocktailServerService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('init');
+  }
+
+  onSubmit() {
+    const newCocktail = {
+      name: this.name,
+      author: this.author,
+      ingredients: this.ingredients,
+      description: this.description,
+      image: this.image,
+    };
+
+    this.cocktailServer.addCocktail(newCocktail).subscribe();
+
+    console.log(newCocktail);
+
+    this.name = '';
+    this.author = '';
+    this.ingredients = [];
+    this.description = '';
+    this.image = '';
+  }
 
   addTag(e: any) {
     if (e.key == 'Enter') {
       let tag: string = e.target.value.replace(/\s+/g, ' ');
-      if (tag.length > 1 && !this.tags.includes(tag))
+      if (tag.length > 1 && !this.ingredients.includes(tag))
         tag.split(',').forEach((tag) => {
-          this.tags.push(tag);
-          console.log(this.tags);
+          this.ingredients.push(tag);
+          console.log(this.ingredients);
         });
     } else return;
     e.target.value = '';
   }
 
   remove(tag: string) {
-    let index = this.tags.indexOf(tag);
-    this.tags = [...this.tags.slice(0, index), ...this.tags.slice(index + 1)];
-    console.log(this.tags);
+    let index = this.ingredients.indexOf(tag);
+    this.ingredients = [
+      ...this.ingredients.slice(0, index),
+      ...this.ingredients.slice(index + 1),
+    ];
+    console.log(this.ingredients);
   }
 
   removeAll() {
-    this.tags.length = 0;
+    this.ingredients.length = 0;
     const ingredientTags = document.querySelectorAll('.ingredient-tags');
     ingredientTags.forEach((ingredientTags) => ingredientTags.remove());
-    console.log(this.tags);
+    console.log(this.ingredients);
   }
 }

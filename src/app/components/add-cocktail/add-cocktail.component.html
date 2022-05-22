@@ -67,7 +67,7 @@
                       </p>
 
                       <ul class="input-window">
-                        <div class="tag-list" *ngFor="let tag of tags">
+                        <div class="tag-list" *ngFor="let tag of ingredients">
                           <li class="ingredient-tags">
                             {{ tag
                             }}<fa-icon
@@ -81,6 +81,7 @@
 
                       <div class="details">
                         <button
+                          type="button"
                           class="btn btn-light btn-remove-ingredients"
                           (click)="removeAll()"
                         >
@@ -119,44 +120,14 @@
                   <label for="floatingInput">Add picture link</label>
                 </div>
 
-                <input
-                  type="submit"
-                  value="Save"
+                <button
+                  type="button"
                   class="btn btn-light btn-save"
-                />
+                  (click)="onSubmit()"
+                >
+                  Save
+                </button>
               </form>
-
-              <!-- Tags imput html -->
-
-              <div class="wrapper">
-                <div class="content">
-                  <p>Enter ingredients - press enter after each ingredient</p>
-
-                  <ul class="input-window">
-                    <div class="tag-list" *ngFor="let tag of tags">
-                      <li class="ingredient-tags">
-                        {{ tag
-                        }}<fa-icon
-                          [icon]="faXmark"
-                          (click)="remove(tag)"
-                        ></fa-icon>
-                      </li>
-                    </div>
-                    <input type="text" (keyup)="addTag($event)" />
-                  </ul>
-
-                  <div class="details">
-                    <button
-                      class="btn btn-light btn-remove-ingredients"
-                      (click)="removeAll()"
-                    >
-                      Remove all
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Tags imput html -->
             </div>
           </div>
         </div>
