@@ -10,3 +10,57 @@
   color: #fa4616;
   border: 1px solid #fa4616;
 }
+
+/* Tag imput css */
+
+.wrapper :where(li, li, fa-icon) {
+  display: flex;
+  align-items: center;
+}
+
+.input-window {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px 0;
+  padding: 0.5rem;
+  border: 1px solid #bcbcbc;
+  border-radius: 3px;
+}
+
+.ingredient-tags {
+  list-style: none;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 3px;
+  background: #fdcabb;
+  border: 1px solid #fcb6a0;
+}
+
+.content ul li fa-icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  color: #393939;
+  font-size: 12px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background-color: #fba78e;
+  justify-content: center;
+}
+
+.content ul input {
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+.btn-remove-ingredients {
+  background-color: #fa4616;
+  color: white;
+  border: none;
+}
+
+.btn-remove-ingredients:focus {
+  box-shadow: 0 0 0 0.2rem rgba(250, 70, 22, 0.25);
+}

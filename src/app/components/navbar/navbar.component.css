@@ -1,3 +1,21 @@
 .navbar-brand {
   color: #fa4616;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fa4616;
+}
+
+.navbar-nav .nav-link:focus {
+  background-color: #fa4616;
+  color: white;
+}
+
+.navbar-custom {
+  background-color: white;
 }

@@ -62,6 +62,50 @@
         </div>
       </div>
 
+      <!-- Tag input html -->
+
+      <div class="wrapper">
+        <div class="content">
+          <p>Enter ingredients - press enter after each ingredient</p>
+
+          <ul class="input-window">
+            <div
+              class="tag-list"
+              name="ingredients"
+              [(ngModel)]="clonedCocktail.ingredients"
+              *ngFor="let tag of clonedCocktail.ingredients"
+            >
+              <li class="ingredient-tags">
+                {{ tag
+                }}<fa-icon [icon]="faXmark" (click)="remove(tag)"></fa-icon>
+              </li>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Edit Cocktail Ingredients"
+              aria-describedby="basic-addon1"
+              id="cocktailIngredients"
+              required
+              name="ingredients"
+              (keyup)="addTag($event)"
+            />
+          </ul>
+
+          <div class="details">
+            <button
+              type="button"
+              class="btn btn-light btn-remove-ingredients"
+              (click)="removeAll()"
+            >
+              Remove all
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tag input html -->
+
       <div class="container mt-4">
         <label for="cocktailDescription" class="form-label"
           >Edit Cocktail Description</label
