@@ -27,34 +27,37 @@
               <form>
                 <div class="container m-6 p-6">
                   <div class="container mt-4">
-                    <div class="form-floating mb-3">
+                    <label for="cocktailName" class="form-label"
+                      >Cocktail Name</label
+                    >
+                    <div class="input-group mb-3">
                       <input
                         type="text"
                         class="form-control"
-                        id="floatingInput"
-                        placeholder="Enter cocktail name"
-                        aria-label="Enter cocktail name"
+                        aria-label="Edit Cocktail Name"
                         aria-describedby="basic-addon1"
+                        id="cocktailName"
                         name="name"
+                        required
                         [(ngModel)]="name"
                       />
-                      <label for="floatingInput">Enter cocktail name</label>
                     </div>
                   </div>
 
                   <div class="container mt-4">
-                    <div class="form-floating mb-3">
+                    <label for="cocktailAuthor" class="form-label"
+                      >Cocktail Author</label
+                    >
+                    <div class="input-group mb-3">
                       <input
                         type="text"
                         class="form-control"
-                        id="floatingInput"
-                        placeholder="Enter author name"
-                        aria-label="Enter author name"
+                        aria-label="Edit Cocktail Author"
                         aria-describedby="basic-addon1"
+                        id="cocktailAuthor"
                         name="author"
                         [(ngModel)]="author"
                       />
-                      <label for="floatingInput">Enter author name</label>
                     </div>
                   </div>
 
@@ -93,40 +96,49 @@
 
                   <!-- Tags imput html -->
 
-                  <div class="form-floating mb-3">
-                    <textarea
-                      class="form-control"
-                      placeholder="Leave a comment here"
-                      id="floatingTextarea2"
-                      style="height: 80px"
-                      name="description"
-                      [(ngModel)]="description"
-                    ></textarea>
-                    <label for="floatingTextarea2">Add a description</label>
+                  <div class="container mt-4">
+                    <label for="cocktailDescription" class="form-label"
+                      >Cocktail Description</label
+                    >
+                    <div class="input-group">
+                      <textarea
+                        class="form-control"
+                        aria-label="Edit Cocktail Description"
+                        id="cocktailDescription"
+                        required
+                        style="height: 100px"
+                        name="description"
+                        [(ngModel)]="description"
+                      ></textarea>
+                    </div>
                   </div>
-                </div>
 
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingInput"
-                    placeholder="Enter ingredients"
-                    aria-label="Enter ingredients"
-                    aria-describedby="basic-addon1"
-                    name="image"
-                    [(ngModel)]="image"
-                  />
-                  <label for="floatingInput">Add picture link</label>
-                </div>
+                  <div class="container mt-4">
+                    <label for="cocktailImage" class="form-label"
+                      >Cocktail Image Link</label
+                    >
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Edit Cocktail Image"
+                        aria-describedby="basic-addon1"
+                        id="cocktailImage"
+                        required
+                        name="image"
+                        [(ngModel)]="image"
+                      />
+                    </div>
+                  </div>
 
-                <button
-                  type="button"
-                  class="btn btn-light btn-save"
-                  (click)="onSubmit()"
-                >
-                  Save
-                </button>
+                  <button
+                    type="button"
+                    class="btn btn-light btn-save"
+                    (click)="onSubmit()"
+                  >
+                    Save
+                  </button>
+                </div>
               </form>
             </div>
           </div>

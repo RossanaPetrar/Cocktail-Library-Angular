@@ -1,3 +1,8 @@
+.btn-close:focus {
+  border-color: white;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25);
+}
+
 .btn-save {
   background-color: #fa4616;
   color: white;

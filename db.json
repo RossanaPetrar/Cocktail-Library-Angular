@@ -42,6 +42,18 @@
       "description": "Smash the blueberries in a tall glass. Add ice, gin, top with tonic water, squeeze lime juice and stir. Garnish with a lime wedge and mint leaves.",
       "image": "https://sustainmycookinghabit.com/wp-content/uploads/2019/05/Blackberry-peach-cocktail-square.jpg",
       "author": "Vlad"
+    },
+    {
+      "name": "Sex on the beach",
+      "author": "Rossana",
+      "ingredients": [
+        "30 ml tequila",
+        "50 ml orange juice",
+        "grenadine"
+      ],
+      "description": "Fill two tall glasses with ice cubes. Pour the vodka, peach schnapps and fruit juices into a large jug and stir. Divide the mixture between the two glasses and stir gently to combine. Garnish with the cocktail cherries and orange slices.",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/sex_on_the_beach-621ae6e.jpg?quality=90&webp=true&resize=440,400",
+      "id": 4
     }
   ]
 }

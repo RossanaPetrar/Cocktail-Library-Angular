@@ -12,8 +12,8 @@
 }
 
 .navbar-nav .nav-link:focus {
-  background-color: #fa4616;
-  color: white;
+  color: #fa4616;
+  font-weight: bold;
 }
 
 .navbar-custom {
