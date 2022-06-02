@@ -15,6 +15,7 @@ export class AddCocktailComponent implements OnInit {
   ingredients: string[] = [];
   description!: string;
   image!: string;
+  alcohol!: boolean;
 
   constructor(private cocktailServer: CocktailServerService) {}
 
@@ -29,6 +30,7 @@ export class AddCocktailComponent implements OnInit {
       ingredients: this.ingredients,
       description: this.description,
       image: this.image,
+      alcohol: this.alcohol,
     };
 
     this.cocktailServer.addCocktail(newCocktail).subscribe();
@@ -40,6 +42,7 @@ export class AddCocktailComponent implements OnInit {
     this.ingredients = [];
     this.description = '';
     this.image = '';
+    this.alcohol = true;
   }
 
   addTag(e: any) {

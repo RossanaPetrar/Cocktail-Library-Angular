@@ -13,6 +13,12 @@
   margin: 1.5rem 0 1.5rem 0;
 }
 
+.badge {
+  background-color: white;
+  color: #fa4616;
+  border: 1px solid #fa4616;
+}
+
 .btn-delete {
   background-color: #fa4616;
   color: white;

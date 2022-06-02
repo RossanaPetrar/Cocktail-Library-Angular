@@ -5,4 +5,5 @@ export interface Cocktail {
   ingredients: string[];
   description: string;
   image: string;
+  alcohol: boolean;
 }

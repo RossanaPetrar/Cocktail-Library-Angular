@@ -44,6 +44,44 @@
         </div>
       </div>
 
+      <div class="container mt-4 mb-2">
+        <label for="cocktailAlcohol" class="form-label"
+          >Type of Cocktail:
+        </label>
+        <div class="form-check form-check-inline ms-3" id="cocktailAlcohol">
+          <input
+            class="form-check-input custom-control-input"
+            type="radio"
+            name="alcohol"
+            id="inlineRadio1"
+            value="option1"
+            [(ngModel)]="clonedCocktail.alcohol"
+            [value]="true"
+          />
+          <label
+            class="form-check-label custom-control-label"
+            for="inlineRadio1"
+            >Alcoholic</label
+          >
+        </div>
+        <div class="form-check form-check-inline ms-1">
+          <input
+            class="form-check-input custom-control-input"
+            type="radio"
+            name="alcohol"
+            id="inlineRadio2"
+            value="option2"
+            [(ngModel)]="clonedCocktail.alcohol"
+            [value]="false"
+          />
+          <label
+            class="form-check-label custom-control-label"
+            for="inlineRadio2"
+            >Non-alcoholic</label
+          >
+        </div>
+      </div>
+
       <!-- Tag input html -->
       <div class="container mt-4">
         <div class="wrapper">

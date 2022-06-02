@@ -40,6 +40,10 @@
   align-items: center;
 }
 
+.ingredients-label {
+  font-size: 1.03rem;
+}
+
 .input-window {
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +85,7 @@
   background-color: #fa4616;
   color: white;
   border: none;
+  margin-top: 0.35rem;
 }
 
 .btn-remove-ingredients:focus {

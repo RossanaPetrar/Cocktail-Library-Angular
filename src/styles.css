@@ -9,3 +9,8 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.btn:focus {
+  border-color: #fa4616;
+  box-shadow: 0 0 0 0.2rem rgba(250, 70, 22, 0.25);
+}

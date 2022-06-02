@@ -15,6 +15,7 @@ export class CocktailModalComponent implements OnInit {
   ingredients!: string[];
   description!: string;
   image!: string;
+  alcohol!: boolean;
   @Input() clonedCocktail!: Cocktail;
 
   constructor(public activeModal: NgbActiveModal) {}

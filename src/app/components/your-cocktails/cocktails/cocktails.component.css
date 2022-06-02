@@ -41,3 +41,23 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-left: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
+/* Filter buttons */
+
+.btn-filter {
+  background-color: white;
+  color: #fa4616;
+  border: 1px solid #fa4616;
+}
+
+.btn-filter.active {
+  background-color: #fa4616;
+  color: white;
+  border: none;
+  margin-left: 1rem;
+}
+
+.btn-filter.active:focus {
+  border-color: #fa4616;
+  box-shadow: 0 0 0 0.2rem rgba(250, 70, 22, 0.25);
+}

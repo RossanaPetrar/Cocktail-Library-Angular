@@ -6,7 +6,7 @@
   </p>
 </section>
 
-<div class="container text-center mt-5 mb-5">
+<div class="container text-center mt-5 mb-4">
   <input
     type="search"
     class="search-bar"
@@ -20,28 +20,13 @@
   </button>
 </div>
 
-<!-- Filter section with badges: -->
+<!-- Filter section with buttons: -->
 
-<!-- <section
-  class="container d-flex justify-content-start align-items-start flex-wrap"
->
-  <h4>Filter:</h4>
-  <h5>Level</h5>
-  <span class="badge bg-light">Beginner</span>
-  <span class="badge bg-light">Intermediate</span>
-  <span class="badge bg-light">Advanced</span>
-  <h5>Alcohol content</h5>
-  <span class="badge bg-light">Alcoholic</span>
-  <span class="badge bg-light">Nonalcoholic</span>
-  <h5>Alcohol type</h5>
-  <span class="badge bg-light">Rum</span>
-  <span class="badge bg-light">Gin</span>
-  <span class="badge bg-light">Vodka</span>
-</section>
-
-radio buttons ca sa fie HTML semantic
-rxjs operator scan pentru filtrare
-SAU angular grid pentru filtrare, practic toate componentele o sa fie tabel si filtrezi in tabel-->
+<div class="container d-flex justify-content-center text-center mb-4">
+  <button class="btn btn-light btn-filter active me-3">All Cocktails</button>
+  <button class="btn btn-light btn-filter">Alcoholic Cocktails</button>
+  <button class="btn btn-light btn-filter ms-3">Non-alcoholic Cocktails</button>
+</div>
 
 <app-cocktail-card
   *ngFor="let cocktail of cocktails"
