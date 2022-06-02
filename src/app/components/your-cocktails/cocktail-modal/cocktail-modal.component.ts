@@ -12,7 +12,7 @@ export class CocktailModalComponent implements OnInit {
   faXmark = faXmark;
   name!: string;
   author!: string;
-  ingredients: string[] = [];
+  ingredients!: string[];
   description!: string;
   image!: string;
   @Input() clonedCocktail!: Cocktail;
@@ -24,28 +24,28 @@ export class CocktailModalComponent implements OnInit {
   addTag(e: any) {
     if (e.key == 'Enter') {
       let tag: string = e.target.value.replace(/\s+/g, ' ');
-      if (tag.length > 1 && !this.ingredients.includes(tag))
+      if (tag.length > 1 && !this.clonedCocktail.ingredients.includes(tag))
         tag.split(',').forEach((tag) => {
-          this.ingredients.push(tag);
-          console.log(this.ingredients);
+          this.clonedCocktail.ingredients.push(tag);
+          console.log(this.clonedCocktail.ingredients);
         });
     } else return;
     e.target.value = '';
   }
 
   remove(tag: string) {
-    let index = this.ingredients.indexOf(tag);
-    this.ingredients = [
-      ...this.ingredients.slice(0, index),
-      ...this.ingredients.slice(index + 1),
+    let index = this.clonedCocktail.ingredients.indexOf(tag);
+    this.clonedCocktail.ingredients = [
+      ...this.clonedCocktail.ingredients.slice(0, index),
+      ...this.clonedCocktail.ingredients.slice(index + 1),
     ];
-    console.log(this.ingredients);
+    console.log(this.clonedCocktail.ingredients);
   }
 
   removeAll() {
-    this.ingredients.length = 0;
+    this.clonedCocktail.ingredients.length = 0;
     const ingredientTags = document.querySelectorAll('.ingredient-tags');
     ingredientTags.forEach((ingredientTags) => ingredientTags.remove());
-    console.log(this.ingredients);
+    console.log(this.clonedCocktail.ingredients);
   }
 }

@@ -15,7 +15,6 @@ export class AddCocktailComponent implements OnInit {
   ingredients: string[] = [];
   description!: string;
   image!: string;
-  tags: string[] = [];
 
   constructor(private cocktailServer: CocktailServerService) {}
 

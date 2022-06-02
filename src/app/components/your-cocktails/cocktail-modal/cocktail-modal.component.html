@@ -44,62 +44,45 @@
         </div>
       </div>
 
-      <div class="container mt-4">
-        <label for="cocktailIngredients" class="form-label"
-          >Edit Cocktail Ingredients - press enter after each ingredient</label
-        >
-        <div class="input-group mb-3">
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Edit Cocktail Ingredients"
-            aria-describedby="basic-addon1"
-            id="cocktailIngredients"
-            required
-            name="ingredients"
-            [(ngModel)]="clonedCocktail.ingredients"
-          />
-        </div>
-      </div>
-
       <!-- Tag input html -->
+      <div class="container mt-4">
+        <div class="wrapper">
+          <div class="content">
+            <p>Enter ingredients - press enter after each ingredient</p>
 
-      <div class="wrapper">
-        <div class="content">
-          <p>Enter ingredients - press enter after each ingredient</p>
+            <ul class="input-window">
+              <div
+                class="tag-list"
+                *ngFor="let tag of clonedCocktail.ingredients"
+              >
+                <li
+                  class="ingredient-tags"
+                  name="ingredients"
+                  [(ngModel)]="clonedCocktail.ingredients"
+                  ngDefaultControl
+                >
+                  {{ tag
+                  }}<fa-icon [icon]="faXmark" (click)="remove(tag)"></fa-icon>
+                </li>
+              </div>
+              <input
+                type="text"
+                aria-label="Edit Cocktail Ingredients"
+                id="cocktailIngredients"
+                required
+                (keyup)="addTag($event)"
+              />
+            </ul>
 
-          <ul class="input-window">
-            <div
-              class="tag-list"
-              name="ingredients"
-              [(ngModel)]="clonedCocktail.ingredients"
-              *ngFor="let tag of clonedCocktail.ingredients"
-            >
-              <li class="ingredient-tags">
-                {{ tag
-                }}<fa-icon [icon]="faXmark" (click)="remove(tag)"></fa-icon>
-              </li>
+            <div class="details">
+              <button
+                type="button"
+                class="btn btn-light btn-remove-ingredients"
+                (click)="removeAll()"
+              >
+                Remove all
+              </button>
             </div>
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Edit Cocktail Ingredients"
-              aria-describedby="basic-addon1"
-              id="cocktailIngredients"
-              required
-              name="ingredients"
-              (keyup)="addTag($event)"
-            />
-          </ul>
-
-          <div class="details">
-            <button
-              type="button"
-              class="btn btn-light btn-remove-ingredients"
-              (click)="removeAll()"
-            >
-              Remove all
-            </button>
           </div>
         </div>
       </div>

@@ -5,10 +5,25 @@
   margin-left: 1rem;
 }
 
+.btn-save:focus {
+  border-color: #fa4616;
+  box-shadow: 0 0 0 0.2rem rgba(250, 70, 22, 0.25);
+}
+
 .btn-cancel {
   background-color: white;
   color: #fa4616;
   border: 1px solid #fa4616;
+}
+
+.btn-cancel:focus {
+  border-color: #fa4616;
+  box-shadow: 0 0 0 0.2rem rgba(250, 70, 22, 0.25);
+}
+
+.form-control:focus {
+  border-color: #fa4616;
+  box-shadow: 0 0 0 0.2rem rgba(250, 70, 22, 0.25);
 }
 
 /* Tag imput css */

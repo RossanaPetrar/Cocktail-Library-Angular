@@ -20,8 +20,18 @@
   margin-left: 1rem;
 }
 
+.btn-delete:focus {
+  border-color: #fa4616;
+  box-shadow: 0 0 0 0.2rem rgba(250, 70, 22, 0.25);
+}
+
 .btn-edit {
   background-color: white;
   color: #fa4616;
   border: 1px solid #fa4616;
+}
+
+.btn-edit:focus {
+  border-color: #fa4616;
+  box-shadow: 0 0 0 0.2rem rgba(250, 70, 22, 0.25);
 }
