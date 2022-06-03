@@ -23,30 +23,9 @@
 <!-- Filter section with buttons: -->
 
 <div class="container d-flex justify-content-center text-center mb-4">
-  <button
-    class="btn btn-light btn-filter active me-3"
-    [class.active]="filter == 'all'"
-    (click)="filter = 'all'"
-    (click)="filterCocktails()"
-  >
-    All Cocktails
-  </button>
-  <button
-    class="btn btn-light btn-filter"
-    [class.active]="filter == 'alcohol'"
-    (click)="filter = 'alcohol'"
-    (click)="filterCocktails()"
-  >
-    Alcoholic Cocktails
-  </button>
-  <button
-    class="btn btn-light btn-filter ms-3"
-    [class.active]="filter == 'nonAlcohol'"
-    (click)="filter = 'nonAlcohol'"
-    (click)="filterCocktails()"
-  >
-    Non-alcoholic Cocktails
-  </button>
+  <button class="btn btn-light btn-filter active me-3">All Cocktails</button>
+  <button class="btn btn-light btn-filter">Alcoholic Cocktails</button>
+  <button class="btn btn-light btn-filter ms-3">Non-alcoholic Cocktails</button>
 </div>
 
 <app-cocktail-card

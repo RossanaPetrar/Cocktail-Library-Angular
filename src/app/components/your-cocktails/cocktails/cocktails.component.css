@@ -54,6 +54,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #fa4616;
   color: white;
   border: none;
+  margin-left: 1rem;
 }
 
 .btn-filter.active:focus {
