@@ -26,22 +26,20 @@ export class CocktailsComponent implements OnInit {
       .subscribe((cocktails) => (this.cocktails = cocktails));
   }
 
-  // filter: 'all' | 'active' | 'alcohol' = 'all';
+  filter: 'all' | 'alcohol' | 'nonAlcohol' = 'all';
 
-  // filterCocktails() {
-  //   if (this.filter === 'all') {
-  //     return this.cocktailServerService
-  //       .getCocktails()
-  //       .subscribe((cocktails) => (this.cocktails = cocktails));
-  //   }
-  //   return this.cocktailServerService
-  //     .getCocktails()
-  //     .pipe(
-  //       tap((cocktail) =>
-  //         this.filter === 'alcohol' ? cocktail.alcohol : !cocktail.alcohol
-  //       )
-  //     );
-  // }
+  filterCocktails() {
+    if (this.filter === 'all') {
+      return this.cocktailServerService
+        .getCocktails()
+        .subscribe((cocktails) => (this.cocktails = cocktails));
+    }
+    return this.cocktailServerService
+      .getCocktails()
+      .subscribe((cocktail) =>
+        cocktail.filter((item) => item.alcohol === true)
+      );
+  }
 
   deleteCocktail(cocktail: Cocktail) {
     this.cocktailServerService
