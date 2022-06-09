@@ -20,28 +20,35 @@ export class CocktailsComponent implements OnInit {
     private modalService: NgbModal
   ) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.cocktailServerService
       .getCocktails()
       .subscribe((cocktails) => (this.cocktails = cocktails));
   }
 
-  // filter: 'all' | 'active' | 'alcohol' = 'all';
+  filter: 'all' | 'alcohol' | 'noAlcohol' = 'all';
 
-  // filterCocktails() {
-  //   if (this.filter === 'all') {
-  //     return this.cocktailServerService
-  //       .getCocktails()
-  //       .subscribe((cocktails) => (this.cocktails = cocktails));
-  //   }
-  //   return this.cocktailServerService
-  //     .getCocktails()
-  //     .pipe(
-  //       tap((cocktail) =>
-  //         this.filter === 'alcohol' ? cocktail.alcohol : !cocktail.alcohol
-  //       )
-  //     );
-  // }
+  filterCocktails() {
+    if (this.filter === 'all') {
+      this.cocktailServerService
+        .getCocktails()
+        .subscribe((cocktails) => (this.cocktails = cocktails));
+    } else if (this.filter === 'alcohol') {
+      this.cocktailServerService
+        .getCocktails()
+        .subscribe(
+          (cocktails) =>
+            (this.cocktails = cocktails.filter((c) => c.alcohol == true))
+        );
+    } else if (this.filter === 'noAlcohol') {
+      this.cocktailServerService
+        .getCocktails()
+        .subscribe(
+          (cocktails) =>
+            (this.cocktails = cocktails.filter((c) => c.alcohol == false))
+        );
+    }
+  }
 
   deleteCocktail(cocktail: Cocktail) {
     this.cocktailServerService
