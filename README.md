@@ -4,7 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve --open` for a dev server. It will automatically open the browser to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+Run `npm run server` to have access to the json database and be able to use the website's CRUD functionalities.
 
 ## Code scaffolding
 

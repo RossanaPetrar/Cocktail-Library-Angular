@@ -13,7 +13,7 @@
         "blood orange slices"
       ],
       "description": "Cut a lime wedge to wet the rim of your cocktail glass. Then, dip the rim into a bowl of worm salt. In a shaker, pour in mezcal and lime juice. Shake for 10 seconds. Pour into a salt-rimmed and ice-filled cocktail glass. Top off with blood orange soda and sparkling water. Garnish with a slice of blood orange and a couple sprigs of thyme.",
-      "image": "https://www.kitchensanctuary.com/wp-content/uploads/2016/06/Dark-n-stormy-square-FS-2617.jpg",
+      "image": "https://www.brit.co/media-library/blood-orange-mezcal-cocktail-recipe.jpg?id=21500989&width=800&quality=80",
       "author": "Lisa",
       "alcohol": true
     },
@@ -24,12 +24,13 @@
         "60 ml spiced rum",
         "10 ml triple sec",
         "5 ml Masala Chai syrup",
-        "10 ml lemon juice"
+        "10 ml lemon juice",
+        "coke"
       ],
-      "description": "Mix all the ingredients in a shaker with a couple of ice cubes. Shake 15 seconds. Strain and pour over ice. Fill the rest of the glass with coke.",
-      "image": "https://cdn.adh.reperio.news/image-6/6316322f-3e92-4d38-8059-3e879299019a/index.jpeg?p=a%3D1%26co%3D1.05%26w%3D500%26h%3D750%26q%3D91%26r%3Dcontain%26f%3Dwebp",
+      "description": "Mix the rum, triple sec, masala syrup and lemon juice in a shaker with a couple of ice cubes. Shake 15 seconds. Strain and pour over ice. Fill the rest of the glass with coke.",
+      "image": "https://media.30seconds.com/tip/lg/Cuba-Libre-Cocktail-17770-85e940f753-1548007792.jpg",
       "author": "Ioan",
-      "alcohol": false
+      "alcohol": true
     },
     {
       "id": 3,
@@ -42,9 +43,181 @@
         "125 ml tonic water"
       ],
       "description": "Smash the blueberries in a tall glass. Add ice, gin, top with tonic water, squeeze lime juice and stir. Garnish with a lime wedge and mint leaves.",
-      "image": "https://sustainmycookinghabit.com/wp-content/uploads/2019/05/Blackberry-peach-cocktail-square.jpg",
+      "image": "https://www.aninas-recipes.com/wp-content/uploads/2021/04/blueberrybasilgin3.jpg",
       "author": "Vlad",
       "alcohol": true
+    },
+    {
+      "id": 4,
+      "name": "Amaretto",
+      "ingredients": [
+        "70 ml whiskey (Jameson/Bourbon Whiskey)",
+        "25 ml amaretto (Disaronno)",
+        "15 ml fresh squeezed lemon juice",
+        "60 ml pineapple juice",
+        "6-7 pink peppercorns"
+      ],
+      "description": "Pour the ingredients in a cocktail shaker. Add the ice and mix, then pour into a glass over fresh ice. Garnish with pineapple slices.",
+      "image": "https://maldonsalt.com/wp-content/uploads/2021/09/PINEAPLLE_SOUR_MALDON_0181-683x1024.jpg",
+      "author": "Paula",
+      "alcohol": true
+    },
+    {
+      "id": 5,
+      "name": "Tonic Compote",
+      "ingredients": [
+        "1 ice cube",
+        "30 ml Fine Calvados (apple cider brandy)",
+        "10 ml triple sec",
+        "30 ml gin / orange gin",
+        "a pinch of ground cinnamon",
+        "a pinch of ground nutmeg"
+      ],
+      "description": "Mix the ingredients in the shaker and shake them. Strain the mix and pour it into a cocktail glass over the ice. Top it off with tonic water.",
+      "image": "https://loveinmyoven.com/wp-content/uploads/2018/09/Apple-Cinnamon-Gin-Fizz.jpg",
+      "author": "Mada",
+      "alcohol": true
+    },
+    {
+      "id": 6,
+      "name": "Rose Sangria",
+      "ingredients": [
+        "750 ml (1 bottle) rose wine",
+        "250 ml grapefruit juice",
+        "175 ml bourbon",
+        "65 gr honey",
+        "50 ml Chambord (raspberry liqueur)",
+        "2 scoops of watermelon",
+        "200 gr strawberries",
+        "175 gr raspberries"
+      ],
+      "description": "Pour the wine, grapefruit juice, bourbon and Chambord into a pitcher. Stir until the honey dissolves (if the honey is too thick, heat it beforehand). Add the watermelon scoops and the strawberries. Cover and refrigerate for 2 hours. Take it out of the fridge and add more honey if needed. Before serving, add the raspberries.",
+      "image": "https://lepetiteats.com/wp-content/uploads/2020/07/IMG_0700.jpg",
+      "author": "Marcela",
+      "alcohol": true
+    },
+    {
+      "id": 7,
+      "name": "White Russian",
+      "ingredients": [
+        "50 ml vodka",
+        "50 ml coffee or chocolate liqueur",
+        "50 ml cream or milk",
+        "1-2 ice cubes"
+      ],
+      "description": "Put ice in a whiskey glass, then add the vodka and liqueur. Top it off with your favorite white, then mix lightly.",
+      "image": "https://res.cloudinary.com/mealthy1/image/upload/ar_16:11,c_fill,f_auto,h_688,q_auto:best,w_1000/v1523846075/cms_recipe_featured_image/sdt4pgbkmmvtkesgglmm.jpg",
+      "author": "Alex",
+      "alcohol": true
+    },
+    {
+      "id": 8,
+      "name": "Espresso Martini - to last untill 00:00",
+      "ingredients": [
+        "1 shot of espresso",
+        "150 ml milk",
+        "1 shot of Sheridan's",
+        "whipped cream",
+        "mint leaves",
+        "dark chocolate"
+      ],
+      "description": "Mix the ingredients in the shaker and shake them. Pour into a Martini glass. Add whipped cream. Decorate with mint leaves and grated dark chocolate.",
+      "image": "https://www.penningtonspirits.com/wp-content/uploads/2018/06/nkc_Penningtons_MintMartini02.jpg",
+      "author": "Irina",
+      "alcohol": true
+    },
+    {
+      "id": 9,
+      "name": "Strawberry Mojito",
+      "ingredients": [
+        "50 ml rum",
+        "25 ml simple syrup",
+        "25 ml ",
+        "50 ml gin sparkling water",
+        "4 strawberries, diced",
+        "1/2 lime, sliced vertically",
+        "a bunch of mint leaves",
+        "crushed ice"
+      ],
+      "description": "Put the strawberries and lime slices in a tall glass. Add the simple syrup and muddle lightly. Slap the mint leaves and put them in the glass. Add rum, then crushed ice and mix. Top off with water and some ice. Garnish with a slice of lime, mint leaves and a nice strawberry.",
+      "image": "https://theschmidtywife.com/wp-content/uploads/2020/08/featured-Strawberry-Mojito-Mocktail.jpg",
+      "author": "Didi",
+      "alcohol": true
+    },
+    {
+      "id": 10,
+      "name": "Tornado",
+      "ingredients": [
+        "60 ml white rum",
+        "60 ml lemon juice",
+        "2 cubes of brown sugar",
+        "aromatic bitters",
+        "orange bitters",
+        "mint leaves",
+        "ice"
+      ],
+      "description": "Pour 2 dashes of angostura bitters and 4-5 of angostura orange bitters over 2 cubes of brown sugar and 2-3 mint leaves. Muddle everything together. Add the rum and lemon juice. Shake well with 3-4 ice cubes. Pour in a whiskey glass over a large cube of ice.",
+      "image": "https://cdn.pineappleandcoconut.com/wp-content/uploads/2020/01/Meyer-Lemon-Rum-Sour-Cocktail-2.jpg",
+      "author": "Iza",
+      "alcohol": true
+    },
+    {
+      "id": 11,
+      "name": "Ciocolate Orange Espresso Martini",
+      "ingredients": [
+        "1 shot of espresso ",
+        "3 ice cubes",
+        "50 ml vodka",
+        "20 ml coffee liqueur",
+        "orange chocolate"
+      ],
+      "description": "Mix the espresso shot, ice cubes, vodka and coffee liqueur in the shaker. Pour into a martini glass. Grate the orange chocolate on top.",
+      "image": "https://barmagazine.co.uk/wp-content/uploads/2015/06/Merlet-Orange-Espresso-Martini.jpg",
+      "author": "Cata",
+      "alcohol": true
+    },
+    {
+      "id": 12,
+      "name": "Baijiu Tonic",
+      "ingredients": [
+        "60 ml baijiu",
+        "150 ml tonic water",
+        "1/4 lime"
+      ],
+      "description": "Mix the baijiu and tonic water into a Collins glass, squeeze the lime on top and drop it into the glass. Stir with a straw.",
+      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2020/07/mojito.jpg",
+      "author": "Dan",
+      "alcohol": true
+    },
+    {
+      "id": 13,
+      "name": "Cranberry Sparkler",
+      "ingredients": [
+        "180 ml cranberry juice",
+        "30 ml freshly squeezed lime juice",
+        "club soda to top off",
+        "ice",
+        "orange wheel for garnish"
+      ],
+      "description": "In a highball glass, filled with ice, add cranberry juice and lime juice. Top off with club soda. Garnish with orange wheel.",
+      "image": "https://limoncellokitchen.com/wp-content/uploads/2021/11/cranberry-and-orange-juice-mocktail-square-0005.jpg",
+      "author": "LoveToKnow",
+      "alcohol": false
+    },
+    {
+      "id": 14,
+      "name": "Virgin Strawberry Daiquiri",
+      "ingredients": [
+        "6-8 large fresh strawberries, hulled",
+        "30 ounce freshly squeezed lime juice",
+        "1/4 ounce simple syrup",
+        "1 and a half cups cracked ice",
+        "whole strawberry for garnish"
+      ],
+      "description": "Chill a margarita or cocktail glass. In a blender, add cracked ice, strawberries, lime juice, and simple syrup. Blend until desired thickness. Pour into chilled glass. Garnish with whole strawberry.",
+      "image": "https://www.sugarsaltmagic.com/wp-content/uploads/2019/05/Frozen-Moscato-Strawberry-Daiquiri-Recipe-1.jpg",
+      "author": "LoveToKnow",
+      "alcohol": false
     }
   ]
 }
