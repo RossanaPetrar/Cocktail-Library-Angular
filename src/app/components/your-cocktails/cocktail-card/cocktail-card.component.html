@@ -3,14 +3,14 @@
 >
   <div class="card mb-3">
     <div class="row g-0">
-      <div class="col-md-4">
+      <div class="col-lg-4 img-container">
         <img
           src="{{ cocktail.image }}"
           class="img-fluid rounded-start cocktail-image"
           alt="{{ cocktail.name }}"
         />
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="card-body">
           <h5 class="card-title">{{ cocktail.name }}</h5>
 
@@ -27,7 +27,7 @@
           <span class=""></span>
 
           <div
-            class="container-fluid d-flex flex-column justify-content-start align-items-start flex-wrap"
+            class="container-fluid d-flex flex-column justify-content-start align-items-start flex-wrap ingredients-container"
           >
             <div *ngFor="let ingredient of cocktail.ingredients">
               <div class="cocktail-ingredient">
@@ -51,50 +51,3 @@
     </div>
   </div>
 </div>
-
-<!-- <div
-  class="container d-flex justify-content-center align-items-start flex-wrap"
->
-  <div class="card mb-3">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img
-          src="../../../../assets/images/blood_orange_mezcal_cocktail.jpg"
-          class="img-fluid rounded-start"
-          alt="Mezcal Fun Cocktail"
-        />
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Mezcal Fun</h5>
-          <p class="card-text">
-            <small class="text-muted">by Lisa</small>
-          </p>
-          <span class=""></span>
-          <div
-            class="container-fluid d-flex flex-column justify-content-start align-items-start flex-wrap"
-          >
-            <div class="cocktail-ingredient">60 ml Mezcal</div>
-            <div class="cocktail-ingredient">90 ml blood orange soda</div>
-            <div class="cocktail-ingredient">60 ml sparkling water</div>
-            <div class="cocktail-ingredient">30 ml lemon juice</div>
-            <div class="cocktail-ingredient">a couple of thyme sprigs</div>
-            <div class="cocktail-ingredient">worm salt</div>
-            <div class="cocktail-ingredient">blood orange slices</div>
-          </div>
-          <p class="card-text">
-            Cut a lime wedge to wet the rim of your cocktail glass. Then, dip
-            the rim into a bowl of worm salt. In a shaker, pour in mezcal and
-            lime juice. Shake for 10 seconds. Pour into a salt-rimmed and
-            ice-filled cocktail glass.Top off with blood orange soda and
-            sparkling water. Garnish with a slice of blood orange and a couple
-            sprigs of thyme.
-          </p>
-
-          <a href="#" class="btn btn-light btn-edit">Edit</a>
-          <a href="#" class="btn btn-light btn-delete">Delete</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
